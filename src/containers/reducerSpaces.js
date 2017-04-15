@@ -1,6 +1,6 @@
 import { LIST_SPACES, GET_SPACE, DELETE_SPACE, UPDATE_SPACE, CREATE_SPACE } from '../actions/actions'
 
-const spaces = (state = [], action) => {
+const spaces = (state, action) => {
     if (!action || !action.type )
     {
         return state;

@@ -1,6 +1,6 @@
 import { CREATE_SPACE, UPDATE_SPACE } from '../actions/actions'
 
-const spaceForm = (state = { id:'', name:'', memory_quotamb:'', disk_quotamb: '' }, action) => {
+const spaceForm = (state, action) => {
     if (!action || !action.type )
     {
         return state;
@@ -8,7 +8,6 @@ const spaceForm = (state = { id:'', name:'', memory_quotamb:'', disk_quotamb: ''
 
     let newState;
 
-    console.log( "Entered spaceForm reducer" );
     switch(action.type)
     {
         case CREATE_SPACE:

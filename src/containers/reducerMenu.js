@@ -1,5 +1,4 @@
-/*
-import { LIST_APPS, GET_APP, CREATE_APP, UPDATE_APP, DELETE_APP } from '../actions/actions'
+import { SHOW_MENU } from '../actions/actions'
 
 const apps = (state = [], action) => {
     if (!action || !action.type )
@@ -11,19 +10,7 @@ const apps = (state = [], action) => {
 
     switch(action.type)
     {
-        case GET_APP:
-            newState = state;
-            break;
-        case DELETE_APP:
-            newState = state;
-            break;
-        case UPDATE_APP:
-            newState = state;
-            break;
-        case CREATE_APP:
-            newState = state;
-            break;
-        case LIST_APPS:
+        case SHOW_MENU:
             newState = state;
             break;
         default:
@@ -35,4 +22,3 @@ const apps = (state = [], action) => {
 }
 
 export default apps;
-*/
